@@ -118,9 +118,40 @@ Here is where the magic ⚡️ happens, one of the cloud's biggest perks is auto
 much like setting alarms on a clock. When the conditions are met, the data collection scripts are triggered, ensuring timely, relevant and efficient data
 gathering.
 
-Once completed, the pipeline should resemble the flowchart below
+Once completed, the pipeline should resemble the flowchart below, and everything should be ready for the Data Analysis department to take over 🤸🏽
 
 -- INCLUDE HERE THE ANIMMATED FLOWCHART OF THE FULL PROCESS --
+
+
+❗️**Disclaimer**
+Data pipelines can get more complex than this. So, I want to make sure to level expectations:
+•	I will not connect our data pipeline to a BI tool.
+•	I will not be creating either a data warehouse or a data lake.
+•	Iwill not work with big data, data streaming or parallel computing.
+This is just a "newbi" start with a simple approach, before moving on to cool (but oftentimes, complicated) solutions.
+
+## In a nutshell
+
+It might seem simple from the outside, I was just getting data from one place to another, but if you (the reader) have struggled to follow the whole process, you might understand by now,how complex data pipelines can become! and to summarized it all:
+
+•	Collected data from the internet by writing a web scraping script using **Python’s library beautifulsoup.**
+•	Collected **data from the internet through APIs**, either using a **Python wrapper such as spotipy or pyowm**, or assembling the call directly with the
+**requests library**.
+•	Navigated **JSON files** and find the information I need it.
+•	Cleaned data using either **Python’s string operations, str methods from the Pandas library or regex.**
+•	Writed **for loops and list comprehensions** on Python to perform tasks iteratively.
+•	Structured **Python code as functions**.
+•	Setted up a **local MySQL database.**
+•	Created an **SQL data model**, crafting the relationships between tables.
+•	Created MySQL tables with the **appropriate data types, constraints and keys.**
+•	Setted up an **RDS instance** on AWS and enable the connection between my computer and the cloud instance, both through a standard client such as MySQL Workbench and through Python, by using **MySQL-python-connector.** 🔌
+•	**Populated your MySQL tables** with collected data through INSERT queries executed from a Python script.
+•	Setted up **Lambda functions** to run my code in the cloud (using a serverless service).
+•	Created **custom Layers** with ad-hoc dependencies for the Lambda functions.
+•	Scheduled the Lambda functions **to run on a specified schedule.**
+
+
+
 
 
 
