@@ -134,21 +134,22 @@ This is just a "newbi" start with a simple approach, before moving on to cool (b
 
 It might seem simple from the outside, I was just getting data from one place to another, but if you (the reader) have struggled to follow the whole process, you might understand by now,how complex data pipelines can become! and to summarized it all:
 
-•	Collected data from the internet by writing a web scraping script using **Python’s library beautifulsoup.**
-•	Collected **data from the internet through APIs**, either using a **Python wrapper such as spotipy or pyowm**, or assembling the call directly with the
-**requests library**.
-•	Navigated **JSON files** and find the information I need it.
-•	Cleaned data using either **Python’s string operations, str methods from the Pandas library or regex.**
-•	Writed **for loops and list comprehensions** on Python to perform tasks iteratively.
-•	Structured **Python code as functions**.
-•	Setted up a **local MySQL database.**
-•	Created an **SQL data model**, crafting the relationships between tables.
-•	Created MySQL tables with the **appropriate data types, constraints and keys.**
-•	Setted up an **RDS instance** on AWS and enable the connection between my computer and the cloud instance, both through a standard client such as MySQL Workbench and through Python, by using **MySQL-python-connector.** 🔌
-•	**Populated your MySQL tables** with collected data through INSERT queries executed from a Python script.
-•	Setted up **Lambda functions** to run my code in the cloud (using a serverless service).
-•	Created **custom Layers** with ad-hoc dependencies for the Lambda functions.
-•	Scheduled the Lambda functions **to run on a specified schedule.**
+ - Collected data from the internet by writing a web scraping script using **Python’s library beautifulsoup.**
+ - Collected **data from the internet through APIs**, either using a **Python wrapper such as spotipy or pyowm**, or assembling the call directly with the
+   **requests library**.
+ - Navigated **JSON files** and find the information I need it.
+ - Cleaned data using either **Python’s string operations, str methods from the Pandas library or regex.**
+ - Writed **for loops and list comprehensions** on Python to perform tasks iteratively.
+ - Structured **Python code as functions**.
+ - Setted up a **local MySQL database.**
+ - Created an **SQL data model**, crafting the relationships between tables.
+ - Created MySQL tables with the **appropriate data types, constraints and keys.**
+ - Setted up an **RDS instance** on AWS and enable the connection between my computer and the cloud instance, both through a standard client such as
+   MySQL Workbench and through Python, by using **MySQL-python-connector.** 🔌
+ - **Populated your MySQL tables** with collected data through INSERT queries executed from a Python script.
+ - Setted up **Lambda functions** to run my code in the cloud (using a serverless service).
+ - Created **custom Layers** with ad-hoc dependencies for the Lambda functions.
+ - Scheduled the Lambda functions **to run on a specified schedule.**
 
 
 
