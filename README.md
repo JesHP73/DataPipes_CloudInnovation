@@ -1,6 +1,6 @@
 # Behind the Scenes: Data Pipelines and Cloud Innovation 
 
--- INTRODUCTION AND MY THOUGHTS GOES HERE --
+![Alt text](Images_folder/header.jpg)
 
 ## E-Scooter GANS - 📌Case Study, Data Engineer Role
 
@@ -84,7 +84,7 @@ in? Only after answering these questions (and more), would be the moment to star
 locally, and the best tool (for me) is MySQL, so for this step, before creating anything, I used 🔗 https://app.sqldbm.com/MySQL to be able to visualize
 this reationship. 
 
--- INSERT HERE SCREENSHOOT OF THE DESIGNED TABLES IN THE DRAF --
+![Alt text](Images_folder/1.3_Database_Modeling_TheBlueprintCreation.jpg)
 
 #### 1.4 Local Storage: Testing the Waters
 Once the blueprint is ready, it's time to test the waters. By setting up a **MySQL instance locally**, I would be able to ensure that the data from the
@@ -92,7 +92,7 @@ APIs and web scraping endeavors is stored correctly. It's a way to test-driving 
 model**, testing that the connection **between Python and MySQL** works by setting up the database locally on my computer and storing the data I
 collected from the APIs.
 
--- INSERT HERE SCREENSHOOT OF THE DESIGNED TABLES IN MYSQL LOCALLY --
+![Alt text](Images_folder/1.4_LocalStorage_TestingTheWaters.jpg)
 
 
 ### Phase 2: Cloud Pipeline
@@ -104,19 +104,18 @@ it has many advantages when it comes to building data pipelines: scalability, fl
 its extint), I remember this room, full of computers and cables, that requaiers big initial investment and maintenance. One can choose its poison, I
 choose the cloud. 
 
-#### 2.1. Cloud Database
+#### 2.1. Cloud Database conected to mySQL
 Using **RDS from Amazon Web Services (AWS)**, the biggest public cloud provider, one can set up a **MySQL database in the cloud**. It's like moving your
 treasured book collection from a local shelf to a grand library where many can access it. 
 
--- HERE GOES THE RDS, AWS SETUP SCREENSHOOT --
-
+![Alt text](Images_folder/2.1_CloudDatabase_conectedTo_mySQL.jpg)
 
 #### 2.2 Lambda: The Cloud's Command Center 🫡
 Moving scripts to Lambda is like shifting from using personal diaries to collaborative online platforms. **AWS Lambda** allows code to run seamlessly in
 the cloud, ensuring data collection happens and its actually been transfered to the created data base. I moved my data collection scripts from **Jupyter
 Notebook** into a AWS Lambda functions by copying and pasting my local database scrip in an estructured way. 
 
--- INCLUDE A SNIP OF THE TRANSFER FROM SQL TO AWS CODE's FUNCTIONS --
+![Alt text](Images_folder/2.2_LambdaTheCloud_Command_Center.jpg)
 
 
 #### 2.3 Automation: The Digital Clockwork
@@ -124,10 +123,9 @@ Here is where the magic ⚡️ happens, one of the cloud's biggest perks is auto
 much like setting alarms on a clock. When the conditions are met, the data collection scripts are triggered, ensuring timely, relevant and efficient data
 gathering.
 
-Once completed, the pipeline should resemble the flowchart below, and everything should be ready for the Data Analysis department to take over 🤸🏽
+![Alt text](Images_folder/2.3_AutomationTheDigitalClockwork.jpg)
 
--- INCLUDE HERE THE ANIMMATED FLOWCHART OF THE FULL PROCESS --
-
+⚠️ Once completed, the pipeline should resemble the flowchart below, and everything should be ready for the Data Analysis department to take over 🤸🏽
 
 #### Disclaimer ❗️
 Data pipelines can get more complex than this. So, I want to make sure to level expectations:
