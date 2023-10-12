@@ -2,6 +2,42 @@
 
 ![Alt text](Images_folder/header.jpg)
 
+# Table of Contents
+
+🛴 **E-Scooter GANS - Case Study**
+  - Context and Challenges
+  - Problem Statement
+  - Potential Solutions Beyond Predictive Modelling
+
+🛠 **Setting Up the Data Pipeline**
+  - Overview of the Process
+  - Phase 1: Local Pipeline
+    - Web Scraping: The Treasure Hunt
+    - APIs: The Love Language of the Internet
+    - Database Modeling: The Blueprint Creation
+    - Local Storage: Testing the Waters
+  
+🌥 **Transition to Cloud**
+  - Phase 2: Cloud Pipeline
+    - Cloud Database Connected to MySQL
+    - Lambda: The Cloud's Command Center
+    - Automation: The Digital Clockwork
+
+⚠️ **Disclaimer**
+  - Project Scope and Limitations
+
+💡 **In a Nutshell**
+  - Key Takeaways and Processes
+
+🤔 **Reflections**
+  - The Depth and Complexity of Data Engineering
+  - The Five Pillars of a Data Analyst
+
+📝 **Conclusion**
+  - Final Thoughts on the Project and its Impact
+ 
+----
+
 ## E-Scooter GANS - 📌Case Study, Data Engineer Role
 
 ✓ **Context**: Imagine that I have been "hired" by Gans, an e-scooter startup aspiring to operate in 5 of the major cities of Germany. The challenge faced by such companies isn't just sustainability but also ensuring scooters are available where users need them.
