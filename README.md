@@ -4,7 +4,7 @@
 
 # Table of Contents
 
-🛴 **E-Scooter GANS - Case Study**
+🛴 **E-Scooter GANS - 📌Case Study, Data Engineer Role**
   - Context and Challenges
   - Problem Statement
   - Potential Solutions Beyond Predictive Modelling
