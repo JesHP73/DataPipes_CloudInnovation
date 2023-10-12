@@ -48,6 +48,78 @@ to ensure everything works smoothly. Similarly, before deploying a data pipeline
 on your computer.
 
 **1.1 Web Scraping: The Treasure Hunt**
-Just as treasure hunters of old scoured maps and delved into unknown terrains, modern data engineers navigate the vast expanse of the internet. Armed with Python's beautifulsoup library, they extract valuable data hidden within website codes. It's like uncovering hidden gems embedded in the vast digital landscape. Some of the data you will need is going to be floating around the internet, as the content of websites. You will have to learn how to access this information by downloading and extracting the HTML code of these sites, mostly using Python’s most popular web scraping library: beautifulsoup.
+Just as treasure hunters of with old maps and delved into unknown terrains, modern data engineers navigate the vast expanse of the internet (if the
+information in legaly disclose). With **Python's beautifulsoup library**, extracting valuable data hidden within website codes. It's like uncovering
+hidden gems embedded in the digital landscape. Some of the data I will need is going to be floating around the internet, as the content of websites,
+this information by downloading and **extracting the HTML code of these sites**.
+
+**1.2 APIs: or as I call them, the love language of the internet**
+Imagine knocking on the doors of various data houses and politely asking for information. APIs serve as these doorbells, allowing seamless interaction and
+data exchange. With **Python's requests library**, interacting with these APIs becomes as easy as ringing a doorbell and acquire the specific data I need.
+Assemblying a request with the right parameters is key! Each Api might have its own language or better, some of them are already in the programing
+language of a data engineer dayly live. 
+
+For this project, I used the following API's for the collection of data, that will allow GANS to solve the puzzel:
+
+ - **Cities table:** the main German cities they want to work with; I started doing web scraping on wikipedia to retrive information sunch as Latitud and
+Longitud, and population density, And to be honest, Wikipedia is land of no one, so web scraping became extremetly unreliable, thas when, I decided to
+use an API called 🔗 https://api.api-ninjas.com/v1/city for this table.
+ - **Weather table:** to gather the upto date information of the weather conditions in the cities I am gathering information, I used
+🔗 https://openweathermap.org
+ - **Airports & Arrival flights table:** As part of GANS strategy to have e-scooters available also for tourist in this cities, I collected the airports
+Icao's ID that are the main ones for the cities of analysis, and that will help me to search for realtime information of arrival flights; I used
+🔗 https://aerodatabox.com 
+
+
+**1.3 Database Modeling: The Blueprint Creation**
+
+Before constructing a building, architects draft a blueprint. Similarly, before storing data, a logical structure or model for the database is essential.
+It involves determining the tables, their relationships, and the best way to organize data. This foundational step ensures data is stored efficiently and
+can be accessed swiftly by the Data Analyst, data stored as dictionaries or **Pandas DataFrames**. Python objects are great for local exploration and analysis, ⚠️ but not the best format to make data quickly available. 
+
+Here is where, **Relational databases** are the solution. Determining the logical structure of the database is an important first step when a company
+wants to start storing data. Which tables will be need it? How will these tables be related to each other?, what 'datatypes' would I need the information
+in? Only after answering these questions (and more), would be the moment to start actually creating!; I know I want to test and deploy my tables 1st locally, and the best tool (for me) is MySQL, so for this step, before creating anything, I used 🔗 https://app.sqldbm.com/MySQL to be able to visualize this reationship. 
+
+-- INSERT HERE SCREENSHOOT OF THE DESIGNED TABLES --
+
+**1.4 Local Storage: Testing the Waters**
+
+Once the blueprint is ready, it's time to test the waters. By setting up a **MySQL instance locally**, I would be able to ensure that the data from the
+APIs and web scraping endeavors is stored correctly. It's a way to test-driving a car before hitting the main road. Once I havve created the **database
+model**, testing that the connection **between Python and MySQL** works by setting up the database locally on my computer and storing the data I
+collected from the APIs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
