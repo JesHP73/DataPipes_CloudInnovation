@@ -152,6 +152,24 @@ It might seem simple from the outside, I was just getting data from one place to
  - Scheduled the Lambda functions **to run on a specified schedule.**
 
 
+## But, you might wonder, Is that all?
+
+And the answer is yes!, Data engineers work is, in my opinion, the backbone for data analisys. This project Meant, moving data pipelines from local to
+the cloud!!!! Think of it as an astronomer extending their study from Earth to the vastness of space, if you will. My scripts, initially run on local
+machines and now, founded a new home in AWS Lambda, ensuring relevant and up to date data collection. While developing this project, I realized that I had applyed **The Five Pillars of a Data Analyst too** that played a pivotal role:
+
+ - **Curiosity:** The quest to understand e-scooter movements, much like a scientist's thirst for answers, drove this project.
+ - **Understanding the Context:** Analyzing data without context is like reading a book in an unknown language. Recognizing patterns in scooter movements    required a deep understanding of the urban landscape.
+ - **Technical Mindset:** Breaking down the challenge into smaller, manageable tasks was crucial. It's the art of seeing the bigger picture and      understanding the minute brushstrokes that create it.
+
+Data Design: Organizing our data efficiently ensured swift and accurate analyses. Imagine a 
+librarian arranging books, ensuring that readers find what they're looking for without hassles.
+
+Data Strategy: Managing the tools, processes, and the team ensured that our project ran smoothly. Like a maestro conducting an orchestra, ensuring each instrument plays its part to perfection.
+
+Conclusion
+The Gans e-scooter project was not just about predicting scooter movements; it was a deep dive into the world of data analytics. It reaffirmed the importance of understanding the data ecosystem, the need for robust pipelines, and the foundational analytical skills that guide such projects. As we move ahead in this data-driven era, these lessons will be the beacon that lights our path.
+
 
 
 
