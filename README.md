@@ -72,23 +72,57 @@ Icao's ID that are the main ones for the cities of analysis, and that will help 
 
 
 **1.3 Database Modeling: The Blueprint Creation**
-
 Before constructing a building, architects draft a blueprint. Similarly, before storing data, a logical structure or model for the database is essential.
 It involves determining the tables, their relationships, and the best way to organize data. This foundational step ensures data is stored efficiently and
-can be accessed swiftly by the Data Analyst, data stored as dictionaries or **Pandas DataFrames**. Python objects are great for local exploration and analysis, ⚠️ but not the best format to make data quickly available. 
+can be accessed swiftly by the Data Analyst, data stored as dictionaries or **Pandas DataFrames**. Python objects are great for local exploration and
+analysis, ⚠️ but not the best format to make data quickly available. 
 
 Here is where, **Relational databases** are the solution. Determining the logical structure of the database is an important first step when a company
 wants to start storing data. Which tables will be need it? How will these tables be related to each other?, what 'datatypes' would I need the information
-in? Only after answering these questions (and more), would be the moment to start actually creating!; I know I want to test and deploy my tables 1st locally, and the best tool (for me) is MySQL, so for this step, before creating anything, I used 🔗 https://app.sqldbm.com/MySQL to be able to visualize this reationship. 
+in? Only after answering these questions (and more), would be the moment to start actually creating!; I know I want to test and deploy my tables 1st
+locally, and the best tool (for me) is MySQL, so for this step, before creating anything, I used 🔗 https://app.sqldbm.com/MySQL to be able to visualize
+this reationship. 
 
 -- INSERT HERE SCREENSHOOT OF THE DESIGNED TABLES --
 
 **1.4 Local Storage: Testing the Waters**
-
 Once the blueprint is ready, it's time to test the waters. By setting up a **MySQL instance locally**, I would be able to ensure that the data from the
 APIs and web scraping endeavors is stored correctly. It's a way to test-driving a car before hitting the main road. Once I havve created the **database
 model**, testing that the connection **between Python and MySQL** works by setting up the database locally on my computer and storing the data I
 collected from the APIs.
+
+#### Phase 2: Cloud Pipeline
+
+Now, imagine wanting to share a toy train set with the world. You'd move it from your living room to a park, where everyone can see and appreciate it.
+Similarly, once the local pipeline is set, it's time to move it to the cloud, making it accessible and scalable. If you use Google Drive or Apple’s
+iCloud, your files are already on the cloud. **The cloud is a catch-all name for any technological resources or services accessed via the internet**. And
+it has many advantages when it comes to building data pipelines: scalability, flexibility, automation, maintenance… where in the old days (Im not saying
+its extint), I remember this room, full of computers and cables, that requaiers big initial investment and maintenance. One can choose its poison, I
+choose the cloud. 
+
+**2.1. Cloud Database**
+Using **RDS from Amazon Web Services (AWS)**, the biggest public cloud provider, one can set up a **MySQL database in the cloud**. It's like moving your
+treasured book collection from a local shelf to a grand library where many can access it. 
+
+-- HERE GOES THE RDS, AWS SETUP SCREENSHOOT --
+
+**2.2 Lambda: The Cloud's Command Center 🫡**
+Moving scripts to Lambda is like shifting from using personal diaries to collaborative online platforms. **AWS Lambda** allows code to run seamlessly in
+the cloud, ensuring data collection happens and its actually been transfered to the created data base. I moved my data collection scripts from **Jupyter
+Notebook** into a AWS Lambda functions by copying and pasting my local database scrip in an estructured way. 
+
+-- INCLUDE A SNIP OF THE TRANSFER FROM TO VISUAL --
+
+**2.3 Automation: The Digital Clockwork**
+Here is where the magic ⚡️ happens, one of the cloud's biggest perks is automation. Using **AWS's CloudWatch Events or EventBridge**, one can set rules,
+much like setting alarms on a clock. When the conditions are met, the data collection scripts are triggered, ensuring timely, relevant and efficient data
+gathering.
+
+Once completed, the pipeline should resemble the flowchart below
+
+-- INCLUDE HERE THE ANIMMATED FLOWCHART OF THE FULL PROCESS --
+
+
 
 
 
