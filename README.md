@@ -87,9 +87,20 @@ Imagine knocking on the doors of various data houses and politely asking for inf
 
 For this project, I used the following APIs to collect data that will enable GANS to solve the puzzle:
 
-- 🌍 **Cities table:** I began by web scraping Wikipedia for information such as Latitude and Longitude, as well as population density. However, Wikipedia's reliability can be inconsistent. Thus, I decided to use an API from 🔗 https://api.api-ninjas.com/v1/city for this table.
-- ☀️ **Weather table:** To gather up-to-date information on the weather conditions in the cities I am researching, I used 🔗 https://openweathermap.org.
-- 🛬 **Airports & Arrival flights table:** As part of GANS's strategy to have e-scooters available for tourists in these cities, I collected the main airport ICAO IDs relevant to the cities of analysis. This will assist me in searching for real-time arrival flight information; I used 🔗 https://aerodatabox.com.
+- 🌍 **Cities table:** I began by web scraping Wikipedia for information such as Latitude and Longitude, as well as population density. However,
+  Wikipedia's reliability can be inconsistent. Thus, I decided to use an API from
+  🔗 https://api.api-ninjas.com/v1/city for this table.
+  Check out how did I code this collection on : `cities_df_tosql.ipynb` on the files on this repository 🗂️
+  
+- ☀️ **Weather table:** To gather up-to-date information on the weather conditions in the cities I am researching,
+  I used 🔗 https://openweathermap.org.
+  Weather collection code: `Weather_data_tomySQL.ipynb` on the files on this repository 🗂️
+  
+- 🛬 **Airports & Arrival flights table:** As part of GANS's strategy to have e-scooters available for tourists in these cities.
+  I collected the main airport ICAO IDs relevant to the cities of analysis. This will assist me in searching for real-time arrival flight information;
+  I used 🔗 https://aerodatabox.com.
+  Airports & Arrival table collection code can be seem here: `airports_arrival_tomySQL.ipynb` and `Flights_to_mysql-2.ipynb` on the files on this
+  repository 🗂️
 
 #### 1.3 Database Modeling: The Blueprint Creation
 
@@ -121,7 +132,7 @@ By using **RDS from Amazon Web Services (AWS)**, the world's leading public clou
 
 #### 2.2 Lambda: The Cloud's Command Center 🫡
 
-Transitioning scripts to Lambda is like moving from using personal diaries to collaborative online platforms. **AWS Lambda** allows code to run seamlessly in the cloud, ensuring data collection occurs and is transferred to the created database. I shifted my data collection scripts from **Jupyter Notebook** to AWS Lambda functions by copying and pasting my local database script in a structured manner.
+Transitioning scripts to Lambda is like moving from using personal diaries to collaborative online platforms. **AWS Lambda** allows code to run seamlessly in the cloud, ensuring data collection occurs and is transferred to the created database. I shifted my data collection scripts from **Jupyter Notebook** to AWS Lambda functions by copying and pasting my local database script in a structured manner. The funtions I created can be found on this repository files 🗂️ `Flghts_AWS_Lambda_function.py` and 🗂️ `Weather_AWS_Lambda_function.py`
 
 ![Alt text](Images_folder/2.2_LambdaTheCloud_Command_Center.jpg)
 
