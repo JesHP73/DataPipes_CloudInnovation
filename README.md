@@ -10,15 +10,16 @@
   - Potential Solutions Beyond Predictive Modelling
 
 🛠 **Setting Up the Data Pipeline**
-  - Overview of the Process
-  - Phase 1: Local Pipeline
+
+  - **Phase 1: Local Pipeline**
     - Web Scraping: The Treasure Hunt
     - APIs: The Love Language of the Internet
     - Database Modeling: The Blueprint Creation
     - Local Storage: Testing the Waters
   
 🌥 **Transition to Cloud**
-  - Phase 2: Cloud Pipeline
+
+  - **Phase 2: Cloud Pipeline**
     - Cloud Database Connected to MySQL
     - Lambda: The Cloud's Command Center
     - Automation: The Digital Clockwork
