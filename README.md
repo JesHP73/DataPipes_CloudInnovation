@@ -190,5 +190,5 @@ Gans "now has" a powerful data-driven tool to understand scooter movements and e
 
 **So, the next time you hop onto an e-scooter, remember, there's a world of data working behind the scenes, ensuring your ride is smooth!** 🛴📈🚀
 
-**Written by Jessica Hernandez**
+**Written by JesHP73**
 🤓 Soon to be Data Scientist
