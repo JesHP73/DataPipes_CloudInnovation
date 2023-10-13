@@ -1,6 +1,6 @@
 # Behind the Scenes: Data Pipelines and Cloud Innovation 
 
-![Alt text](Images_folder/header.jpg)
+![Alt text](Images_folder/Gans_eScooter_look_like.jpg)
 
 # Table of Contents
 
