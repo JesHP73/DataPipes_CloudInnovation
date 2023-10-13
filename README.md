@@ -142,7 +142,8 @@ This is where the magic ⚡️ happens. One of the cloud's biggest perks is auto
 
 ![Alt text](Images_folder/2.3_AutomationTheDigitalClockwork.jpg)
 
-⚠️ Once completed, the pipeline should resemble the flowchart below, and everything should be ready for the Data Analysis department to take over 🤸🏽
+> **⚠️ Once completed**
+> The pipeline should resemble the flowchart below, and everything should be ready for the Data Analysis department to take over 🤸🏽
 
 #### Disclaimer ❗️
 
