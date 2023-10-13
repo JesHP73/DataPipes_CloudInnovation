@@ -99,7 +99,7 @@ For this project, I used the following APIs to collect data that will enable GAN
 - 🛬 **Airports & Arrival flights table:** As part of GANS's strategy to have e-scooters available for tourists in these cities.
   I collected the main airport ICAO IDs relevant to the cities of analysis. This will assist me in searching for real-time arrival flight information;
   I used 🔗 https://aerodatabox.com.
-  Airports & Arrival table collection code can be seem here: `airports_arrival_tomySQL.ipynb` and `Flights_to_mysql-2.ipynb` on the files on this
+  Airports & Arrival table collection code can be seem here: 🗂️`airports_arrival_tomySQL.ipynb` and `Flights_to_mysql-2.ipynb` on the files on this
   repository 🗂️
 
 #### 1.3 Database Modeling: The Blueprint Creation
